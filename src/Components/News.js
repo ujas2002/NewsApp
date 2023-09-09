@@ -1,0 +1,304 @@
+import React, { Component } from 'react';
+import NewsItem from './NewsItem';
+
+export class News extends Component {
+  "articles"= [
+    {
+        "source": {
+            "id": null,
+            "name": "NDTV News"
+        },
+        "author": "NDTV Sports Desk",
+        "title": "Updated Fixtures List For India After All 10 Teams Confirmed For ICC World Cup 2023 - NDTV Sports",
+        "description": "A look at India's updated ICC World Cup 2023 fixture list after Netherlands became the final team to qualify.",
+        "url": "https://sports.ndtv.com/cricket/updated-fixtures-list-for-india-after-all-10-teams-confirmed-for-icc-world-cup-2023-4184336",
+        "urlToImage": "https://c.ndtvimg.com/2023-06/igm6g6ms_world-cup-2023_625x300_27_June_23.jpg?im=FitAndFill,algorithm=dnn,width=1200,height=675",
+        "publishedAt": "2023-07-06T16:22:45Z",
+        "content": "India will take on Netherlands in their final ICC World Cup 2023 group stage match in Bengaluru on November 11 after the latter became the final side to book their spot in the competition. Bas de Lee… [+1515 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Cicnews.com"
+        },
+        "author": "Edana Robitaille",
+        "title": "BREAKING: IRCC invites 1,500 Express Entry candidates in third round of invitations this week - Canada Immigration News",
+        "description": "IRCC has invited Express Entry candidates for the third day in a row. Today, invitations were issued to candidates who are eligible for category-based selection in healthcare occupations. In total, 1,500 candidates were invited. Candidates required a minimum …",
+        "url": "https://www.cicnews.com/2023/07/ircc-invites-1500-express-entry-candidates-in-third-round-of-invitations-this-week-0736005.html",
+        "urlToImage": "https://www.cicnews.com/wp-content/uploads/2023/07/20230706EEdraw-min.jpg",
+        "publishedAt": "2023-07-06T15:55:00Z",
+        "content": "IRCC has invited Express Entry candidates for the third day in a row.\r\nToday, invitations were issued to candidates who are eligible for category-based selection in healthcare occupations. In total, … [+4517 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Moneycontrol"
+        },
+        "author": "Moneycontrol News",
+        "title": "Tata Steel Q1 update: India production volume up 2% YoY at 5.01 mt - Moneycontrol",
+        "description": "Deliveries at 4.8 million tonnes were higher by 18 percent on YoY basis, driven by rise in domestic deliveries, while exports moderated on YoY basis to 0.25 million tonnes.",
+        "url": "https://www.moneycontrol.com/news/business/companies/tata-steel-q1-update-india-production-volume-up-2-yoy-at-5-01-mt-10917881.html",
+        "urlToImage": "https://images.moneycontrol.com/static-mcnews/2022/10/Steel-770x433.jpg",
+        "publishedAt": "2023-07-06T15:42:34Z",
+        "content": "Tata Steel on July 6 said that its India crude steel production stood at 5.01 million tons (provisionally), with a growth of 2 percent year-on-year (YoY) primarily driven by the ramp-up at Neelachal … [+1329 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Guinnessworldrecords.com"
+        },
+        "author": "Vicki Newman",
+        "title": "MrBeast is first person to reach 1m followers on Threads – hours after app launch - Guinness World Records",
+        "description": "MrBeast became the first person to reach 1 million followers on new social media app Threads, just hours after it launched.",
+        "url": "https://www.guinnessworldrecords.com/news/2023/7/mrbeast-is-first-person-to-reach-1m-followers-on-threads-hours-after-app-launch",
+        "urlToImage": "https://www.guinnessworldrecords.com/Images/mr-beast-threads-split-image_tcm25-754868.jpg",
+        "publishedAt": "2023-07-06T15:02:49Z",
+        "content": "MrBeast has made history as the first person to reach 1 million followers on Threads.\r\nThe brand new social media app a text-based conversation tool to rival Twitter went live on 5 July.\r\nIt took the… [+3125 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "NDTV News"
+        },
+        "author": "NDTV Sports Desk",
+        "title": "Scotland vs Netherlands World Cup Qualifier, Highlights: Netherlands Qualify For 2023 World Cup - NDTV Sports",
+        "description": "SCO vs NED, World Cup Qualifier Highlights:Netherlands have become the 10th team to qualify for the 2023 ODI World Cup in India",
+        "url": "https://sports.ndtv.com/world-cup-qualifiers-2023/scotland-vs-netherlands-world-cup-qualifier-live-score-updates-4181881",
+        "urlToImage": "https://c.ndtvimg.com/2023-07/9016osv_netherlands_625x300_06_July_23.jpeg?im=FaceCrop,algorithm=dnn,width=1200,height=675",
+        "publishedAt": "2023-07-06T14:24:00Z",
+        "content": null
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Livechennai.com"
+        },
+        "author": null,
+        "title": "Live Chennai: Power Shutdown areas in Chennai - Friday (07.07.2023),Power Shutdown areas in Chennai - Friday (07.07.2023) - livechennai.com",
+        "description": null,
+        "url": "https://www.livechennai.com/detailnews.asp?newsid=67755",
+        "urlToImage": null,
+        "publishedAt": "2023-07-06T13:58:04Z",
+        "content": "BUSINESS TIPS BY J SAMPATH"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "The Quint"
+        },
+        "author": "Raajwrita Dutta",
+        "title": "Samsung Galaxy Unpacked Date: Galaxy Z Fold 5 and Galaxy Z Flip 5 Launch Teased - The Quint",
+        "description": "The Samsung Galaxy Unpacked event is set to take place on 26 July, as per official details. Know the specifications of Galaxy Z Fold 5 and Galaxy Z Flip 5 here. Check details.",
+        "url": "https://www.thequint.com/tech-and-auto/tech-news/samsung-galaxy-unpacked-date-galaxy-z-fold-5-and-galaxy-z-flip-5-teased-to-launch-details-here",
+        "urlToImage": "https://images.thequint.com/thequint%2F2023-07%2F04dfe72e-9736-4ec2-a7aa-1812bacdeb89%2F4bb36745e0c4b49018d6e4243e321a5d.jpg?rect=0%2C0%2C400%2C210",
+        "publishedAt": "2023-07-06T13:29:23Z",
+        "content": "Samsung Galaxy Unpacked is set to take place in the last week of July, as per the latest official details. The popular company has officially confirmed the date of its launch event so interested peop… [+549 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Gulte"
+        },
+        "author": "Satya B",
+        "title": "Kaavaalaa Song: Tamannaah’s Routine Glam Show - Gulte",
+        "description": "https://www.youtube.com/watch?v=RVLNBVK8auM Other day with the makers of Superstar Rajnikanth's Jailer releasing a special poster of milky siren Tamannaah Bhatia announcing the arrival of the first song from the film, fans of this spicy seductress got excited…",
+        "url": "https://www.gulte.com/movienews/248648/kaavaalaa-song-tamannaahs-routine-glam-show",
+        "urlToImage": "https://cdn.gulte.com/wp-content/uploads/2023/07/Tamannaah-660x330.jpg",
+        "publishedAt": "2023-07-06T13:11:42Z",
+        "content": "Other day with the makers of Superstar Rajnikanth’s Jailer releasing a special poster of milky siren Tamannaah Bhatia announcing the arrival of the first song from the film, fans of this spicy seduct… [+1035 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Gadgets360.com"
+        },
+        "author": "Roydon Cerejo, Jamshed Avari",
+        "title": "Realme Narzo 60 Pro 5G First Impressions: Stepping on Familiar Toes - Gadgets 360",
+        "description": "Realme has just launched a new generation of its Narzo series called the Narzo 60 5G and the Narzo 60 Pro 5G. Here's our first look at the Narzo 60 Pro 5G.",
+        "url": "https://www.gadgets360.com/mobiles/reviews/realme-narzo-60-pro-price-in-india-first-look-specs-vs-11-pro-5g-4183275",
+        "urlToImage": "https://i.gadgets360cdn.com/large/realme_narzo_60_pro_FI_rear_gadgets360_1688646868374.jpg",
+        "publishedAt": "2023-07-06T12:59:39Z",
+        "content": "Realme has just launched a new generation of its Narzo models, called the Narzo 60 5G and the Narzo 60 Pro 5G. Both smartphones are up for pre-booking and will go on sale on July 15. As is the case w… [+4216 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "India.com"
+        },
+        "author": null,
+        "title": "Yashasvi Jaiswal As Opener To Sanju Samson At No. 5: Team India's Predicted 11 vs West Indies In T20 Series - In Pics - Zee News",
+        "description": "Team India are set to play a 5-match T20I series against West Indies starting from August 3 with Hardik Pandya named as the skipper. Take a look at how the Men in Blue can lineup against West Indies in the T20 series.",
+        "url": "https://zeenews.india.com/photos/sports/yashasvi-jaiswal-as-opener-to-sanju-samson-at-no-5-team-indias-predicted-11-vs-west-indies-in-t20-series-in-pics-2631776",
+        "urlToImage": "https://english.cdn.zeenews.com/sites/default/files/2023/07/06/1235313-indvswi-5.png",
+        "publishedAt": "2023-07-06T12:41:00Z",
+        "content": "By clicking Accept All Cookies, you agree to the storing of cookies on your device and the processing of information obtained via those cookies (including about your preferences, device and online ac… [+357 chars]"
+    },
+    {
+        "source": {
+            "id": "the-times-of-india",
+            "name": "The Times of India"
+        },
+        "author": "etimes.in",
+        "title": "Anil Kapoor heaps praises on Vidya Balan's Neeyat, gives 'standing ovation to the outstanding team' - Indiatimes.com",
+        "description": "Neeyat, starring Vidya Balan in the lead role, is all set to release tomorrow. The edge-of-the seat whodunit co-stars Ram Kapoor, Rahul Bose, Shahana",
+        "url": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/anil-kapoor-heaps-praises-on-vidya-balans-neeyat-gives-standing-ovation-to-the-outstanding-team/articleshow/101548043.cms",
+        "urlToImage": "https://static.toiimg.com/thumb/msid-101547955,width-1070,height-580,imgsize-119736,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+        "publishedAt": "2023-07-06T12:26:00Z",
+        "content": "Vidya Balan, Anil Kapoor, Javed Akhtar and other Bollywood celebs watch Neeyat at a special screeningThe special screening of Neeyat was attended by a slew of celebs such as Javed Akhtar, Anil Kapoor… [+106 chars]"
+    },
+    {
+        "source": {
+            "id": "the-times-of-india",
+            "name": "The Times of India"
+        },
+        "author": "Online Desk, ET HealthWorld",
+        "title": "12 African countries across different regions to receive 18mn doses of first-ever malaria vaccine over next .. - ETHealthWorld",
+        "description": "The RTS,S/AS01 vaccine has been administered to more than 1.7 million children in Ghana, Kenya and Malawi since 2019 and has been shown to be safe and effective, resulting in a substantial reduction in severe malaria and a fall in child deaths. At least 28 Af…",
+        "url": "https://health.economictimes.indiatimes.com/news/pharma/policy-regulations/12-african-countries-across-different-regions-to-receive-18mn-doses-of-first-ever-malaria-vaccine-over-next-2-years/101547657",
+        "urlToImage": "https://etimg.etb2bimg.com/thumb/msid-101547657,imgsize-15564,width-1200,height=765,overlay-ethealth/pharma/policy-regulations/12-african-countries-across-different-regions-to-receive-18mn-doses-of-first-ever-malaria-vaccine-over-next-2-years.jpg",
+        "publishedAt": "2023-07-06T12:23:08Z",
+        "content": "Geneva: Twelve countries across different regions in Africa are set to receive 18 million doses of the first-ever malaria vaccine over the next two years. The rollout is a critical step forward in th… [+4777 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "YouTube"
+        },
+        "author": null,
+        "title": "LIVE: 28 Rajasthan Congress Leaders Reach Congress Headquarters | LIVE NEWS - India Today",
+        "description": "LIVE: 28 Rajasthan Congress Leaders Reach Congress Headquarters | LIVE NEWS #sachinpilot #rajasthannews #rahulgandhi #ashokgehlot Subscribe to India Today fo...",
+        "url": "https://www.youtube.com/watch?v=AC9cGZTYums",
+        "urlToImage": "https://i.ytimg.com/vi/AC9cGZTYums/maxresdefault.jpg",
+        "publishedAt": "2023-07-06T12:09:39Z",
+        "content": null
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Zee Business"
+        },
+        "author": "ZeeBiz WebTeam",
+        "title": "Share Market HIGHLIGHTS: Sensex ends 340 pts higher at 65,786, Nifty at 19,497; M&M, Apollo Hosp - Zee Business",
+        "description": "Share Market Today LIVE: Headline indices hit record closing highs. Catch minute-by-minute updates",
+        "url": "https://www.zeebiz.com/markets/stocks/live-updates-nifty-50-sensex-live-updates-july-6-indian-share-market-today-242931",
+        "urlToImage": "https://cdn.zeebiz.com/sites/default/files/2023/07/06/249852-dfd-1.jpg",
+        "publishedAt": "2023-07-06T11:29:50Z",
+        "content": "SBI Card, HDFC Bank, ICICI Bank, Bajaj Finance and other stocks from the banking and financial services basket are staging mixed moves on Thursday, a day after a draft circular by the RBI asked banks… [+549 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "YouTube"
+        },
+        "author": null,
+        "title": "LIVE: Russian Foreign Ministry Press Conference - Firstpost",
+        "description": "LIVE: Russian Foreign Ministry Press ConferenceRussian Foreign Ministry spokesperson Maria Zakharova holds her weekly news briefing via video link.Russia | R...",
+        "url": "https://www.youtube.com/watch?v=bz5zZgu93Gk",
+        "urlToImage": "https://i.ytimg.com/vi/bz5zZgu93Gk/maxresdefault.jpg",
+        "publishedAt": "2023-07-06T11:16:07Z",
+        "content": null
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Livemint"
+        },
+        "author": null,
+        "title": "How a sedentary lifestyle affects older adults - Mint Lounge",
+        "description": "A new study shows how lack of physical activity can lead to lower quality of life among older adults.",
+        "url": "https://lifestyle.livemint.com/health/wellness/sedentary-lifestyle-affects-older-adults-111688638659687.html",
+        "urlToImage": "https://images.livemint.com/img/2023/07/06/1140x641/Older_Adults_1630063672114_1665767130847_1688640244848.jpg",
+        "publishedAt": "2023-07-06T10:47:29Z",
+        "content": "Physical activity has been linked to reducing the risk of diseases and improving chronic pain by previous research. A new study reiterates this and shows that a lack of physical activity among older … [+2142 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "YouTube"
+        },
+        "author": null,
+        "title": "Russia Ukraine War: Is the Zaporizhzhia Nuclear Power Plant Under Danger? Vantage with Palki Sharma - Firstpost",
+        "description": null,
+        "url": "https://www.youtube.com/watch?v=ylRL7LPNqWk",
+        "urlToImage": null,
+        "publishedAt": "2023-07-06T10:10:00Z",
+        "content": "Your browser isnt supported anymore. Update it to get the best YouTube experience and our latest features. Learn more\r\nRemind me later"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "9to5google.com"
+        },
+        "author": "Ben Schoon",
+        "title": "OnePlus Nord 3: Price, specs, and how many updates it gets - 9to5Google",
+        "description": "Announced today for the UK, Europe, and other regions, the OnePlus Nord 3 is a midrange phone with a fair...",
+        "url": "https://9to5google.com/2023/07/06/oneplus-nord-3-price-updates/",
+        "urlToImage": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2023/07/oneplus-nord-3-1.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+        "publishedAt": "2023-07-06T10:00:00Z",
+        "content": "Announced today for the UK, Europe, and other regions, the OnePlus Nord 3 is a midrange phone with a fair price, solid specs, and the promise of at least three major Android updates.\r\nThe OnePlus Nor… [+1299 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "India.com"
+        },
+        "author": "https://www.india.com/author/sumaila-zaman/",
+        "title": "UGC NET Answer Key 2023: How to Raise Objections Online at ugcnet.nta.nic.in| Step by Step Guide - India.com",
+        "description": "<B>UGC NET Answer Key 2023: </B>Candidates can download the NTA UGC NET Answer Key 2023 by visiting the official website – ugcnet.nta.nic.in.",
+        "url": "https://www.india.com/education/ugc-net-answer-key-2023-how-to-raise-objections-against-nta-ugc-net-answer-key-online-at-ugcnet-nta-nic-in-step-by-step-guide-6151453/",
+        "urlToImage": "https://static.india.com/wp-content/uploads/2023/07/Collage-Maker-01-Jul-2023-07-04-PM-1534.jpg",
+        "publishedAt": "2023-07-06T09:58:12Z",
+        "content": "UGC NET Answer Key 2023: Candidates can download the NTA UGC NET Answer Key 2023 by visiting the official website ugcnet.nta.nic.in.\r\nUGC NET Answer Key 2023: How to Raise Objections Online at ugcnet… [+4248 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "The Tribune India"
+        },
+        "author": "The Tribune India",
+        "title": "Punjab-origin girl 'buried alive' by ex-boyfriend in Australia in 'act of revenge', court hears - The Tribune India",
+        "description": null,
+        "url": "https://www.tribuneindia.com/news/diaspora/punjab-origin-girl-buried-alive-by-ex-boyfriend-in-australia-in-act-of-revenge-court-hears-523288",
+        "urlToImage": null,
+        "publishedAt": "2023-07-06T09:34:00Z",
+        "content": null
+    }
+]
+  constructor(){
+    super();
+    this.state={
+      articles:this.articles
+    }
+
+
+  }
+  async componentDidMount(){
+    let url= "https://newsapi.org/v2/top-headlines?country=in&apiKey=5480867e681e4d5f8be52fd0ae27e9c7";
+    let data=await fetch(url);
+    let parsed=await data.json()
+    this.setState={
+      articles:parsed.articles
+    }
+    console.log(parsed);
+
+  }
+  render() {
+    return (
+      <div>
+        <div className='container my-4'>
+          <h2>NewsTrends-Top Headlines</h2>
+          <div className='row mb-4'>
+            {this.state.articles.map((element)=>{
+              return <div className='col md-3' key={element.url}>
+                <NewsItem title={element.title} description={element.description} url={element.url} imgurl={element.urlToImage}/>
+              </div>
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default News;
+
